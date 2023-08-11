@@ -5,8 +5,11 @@ public class Transposition {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         Random random = new Random();
+        System.out.print("Введіть кількість рядків: ");
         int m = scanner.nextInt();
+        System.out.print("Введить кількість стовбців: ");
         int n = scanner.nextInt();
+        System.out.println("Ось ваша матриця с рандомними числами: ");
         int[][] matrix = new int[m][n];
         for (int i = 0; i < m; i++) {
             for (int j = 0; j < n; j++) {
@@ -15,7 +18,7 @@ public class Transposition {
             }
             System.out.println();
         }
-        System.out.println();
+        System.out.println("Ось транспонована матриця: ");
         int[][] matrixTrans = new int[n][m];
         for (int i = 0; i < n; i++) {
             for (int j = 0; j < m; j++) {
